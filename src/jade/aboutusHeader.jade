@@ -1,0 +1,26 @@
+//
+   Created by LJP on 2015/6/29.
+extends layout
+
+block header_list
+   li.dropdown
+      a(href='index.html') Home
+   li.dropdown.active
+      a(href='aboutus.html') About us
+    li.dropdown
+        a.dropdown-toggle(data-toggle="dropdown")
+            |Product
+            span.caret
+        ul.dropdown-menu
+            li.active
+                a(href="products.html") overview
+            li
+                a(href="specification.html") specification
+            li
+                a(href="imaging.html") imaging
+   li.dropdown
+      a(href='resource.html') Resource
+   li.dropdown
+      a(href='contact.html') Contact
+
+

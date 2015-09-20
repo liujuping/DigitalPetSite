@@ -1,0 +1,104 @@
+//
+   Created by ljp on 2015/7/6.
+
+extends layout
+block header_list
+    li.dropdown
+        a(href='index.html') Home
+    li.dropdown
+        a(href='aboutus.html') About us
+    li.dropdown
+        a.dropdown-toggle(data-toggle="dropdown")
+            |Product
+            span.caret
+        ul.dropdown-menu
+            li.active
+                a(href="products.html") overview
+            li
+                a(href="specification.html") specification
+            li
+                a(href="imaging.html") imaging
+    li.dropdown.active
+        a(href='resource.html') Resource
+    li.dropdown
+        a(href='contact.html') Contact
+block resourcecontent
+    .breadcrumbs-container
+        .container
+            ol.breadcrumb
+                li
+                    a(href="index.html") Home
+                li
+                    a(href='resource.html') Resource
+                li.active news
+    section#blog-wrapper.section.layout-1
+        .container
+            .row
+                .col-md-9.content-wrapper
+                    article.post(style="font-size: 13px; color:#95a5a6;")
+                        .post-thumb
+                            a(href="#")
+                                img.img-responsive(src="http://wobootstrap.com/htmldemo/flatpoint120/assets/img/blog/photo%20(1).jpg" alt="Responsive image")
+                        .post-content
+                            h4.post-title(style="color:#000;font-weight:600") The Ultimate Guide to Adjustment Layers – Vibrance
+                            p Nisl quidam epicuri sea ex, possit senserit cu usu. Sit et justo corpora sadipscing, in doctus delicatissimi his, an consul diceret usu. Ex mundi fabulas sed, noster timeam nominavi pri ut, alii paulo simul his no. Sonet decore dicunt has ea, tation sanctus an sea. Sensibus scribentur an ius, vis lorem pertinax forensibus et, ut vim mutat nemore moderatius. Te pri diceret pericula, id eros iudicabit quo, eos sapientem adipiscing in.
+                            .row
+                                .col-md-6
+                                    p Lorem ipsum dolor sit amet, te eam nisl suscipiantur. Eu eam essent eruditi mandamus. Est in ubique diceret vocibus. Utinam nostro hendrerit ne eos, id aliquid expetendis interesset usu, sed eu quas vocent. Et duo feugiat mandamus.
+                                .col-md-6
+                                    p Pro ea animal forensibus vituperatoribus, ex quando impetus duo. Id natum hendrerit vis, est error adipisci disputando te, quo et utroque facilisi volutpat. Ex ipsum equidem eam, sumo possit democritum ad vel. Eu est postea postulant.
+                            blockquote
+                                p Ea erant impetus vel. Vivendo commune invidunt no nam. In sea facilisi consetetur. Eum diam mutat feugiat ad, facilisis explicari vim cu. Te pri voluptaria accommodare, eos viris aeterno in.
+                            p Lorem ipsum dolor sit amet, te eam nisl suscipiantur. Eu eam essent eruditi mandamus. Est in ubique diceret vocibus. Utinam nostro hendrerit ne eos, id aliquid expetendis interesset usu, sed eu quas vocent. Et duo feugiat mandamus. Cum agam placerat te. Semper causae est ne, ea purto velit duo. Debet intellegebat sea ea, te vis tale saepe inimicus, sit atomorum principes eu. Sed sint ipsum delenit at, alia unum saepe ea per. Ea erant impetus vel. Vivendo commune invidunt no nam. In sea facilisi consetetur. Eum diam mutat feugiat ad, facilisis explicari vim cu. Te pri voluptaria accommodare, eos viris aeterno in.
+                            p Nisl quidam epicuri sea ex, possit senserit cu usu. Sit et justo corpora sadipscing, in doctus delicatissimi his, an consul diceret usu. Ex mundi fabulas sed, noster timeam nominavi pri ut, alii paulo simul his no. Sonet decore dicunt has ea, tation sanctus an sea. Sensibus scribentur an ius, vis lorem pertinax forensibus et, ut vim mutat nemore moderatius. Te pri diceret pericula, id eros iudicabit quo, eos sapientem adipiscing in.
+                        .post-meta
+                            ul.meta-list
+                                li
+                                    span Posted on
+                                    span.black 25 July 2013
+                                li
+                                    span By
+                                    span.black(href="#") Admin
+                                li
+                                    span In
+                                    a.black(href="#") Tutorials
+                                    span ,
+                                    a.black(href="#") Tools & Tips
+                                li
+                                    a.black 1200 Views
+                                        i.icon-long-arrow-right
+                        .post-author
+                            h5.subpage-title About The Author
+                            .post-author-info
+                                .media
+                                    a.pull-left
+                                        img.media-object(width="74" height="74" src="http://wobootstrap.com/htmldemo/flatpoint120/assets/img/users/photo%20(1).jpg" alt="User Image")
+                                    .media-body
+                                        h5.media-heading
+                                            a(style="color:#000;font-weight:600") Theme Admin
+                                        | Pro ea animal forensibus vituperatoribus, ex quando impetus duo. Id natum hendrerit vis, est error adipisci disputando te, quo et utroque facilisi volutpat. Ex ipsum equidem eam, sumo possit democritum ad vel. Eu est postea postulant.
+
+
+                .col-md-3.sidebar
+                    .widget.search
+                        .widget.text
+                            h5.subpage-title Text Widget
+                            p Eam virtute petentium te. Sit ubique assentior similique et, cum tibique comprehensam at. Nam cu diam idque virtute, pro nihil bonorum percipitur et, illum simul eloquentiam per ea. Alii elit qui ad, prima singulis similique an per. Iudico sanctus eam no. Qui corpora accusamus no, eum id eripuit instructior.
+                        .widget.popular-posts
+                            h5.subpage-title Popular Posts
+                            ul.recent-posts
+                                li
+                                    img(src="http://wobootstrap.com/htmldemo/flatpoint120/assets/img/blog/photo%20(10).jpg" alt="Post Image")
+                                    h5
+                                        a(href="newOne.html") The Ultimate Guide to Adjustment Layers – Vibrance
+                                        small Posted July 20, 2013
+                                li
+                                    img(src="http://wobootstrap.com/htmldemo/flatpoint120/assets/img/blog/photo%20(10).jpg" alt="Post Image")
+                                    h5
+                                        a(href="newTwo.html") The Ultimate Guide to Adjustment Layers – Vibrance
+                                        small Posted July 20, 2013
+                                li
+                                    img(src="http://wobootstrap.com/htmldemo/flatpoint120/assets/img/blog/photo%20(10).jpg" alt="Post Image")
+                                    h5
+                                        a(href="newTwo.html") The Ultimate Guide to Adjustment Layers – Vibrance
+                                        small Posted July 20, 2013

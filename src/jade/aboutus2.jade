@@ -1,0 +1,158 @@
+//
+   Created by LJP on 2015/6/29.
+extends aboutusHeader
+block aboutuscontent
+    // Breadcrumbs - START
+    .breadcrumbs-container
+        .container
+            ol.breadcrumb
+                li
+                    a(href='index.html') Home
+                li.active Join us
+    // Breadcrumbs - END
+    // Component: aboutus/aboutus.html - START
+    section
+        .container
+            .row
+                .col-md-3
+                    .list-group.bright.background-clouds.color-text
+                        .list-group-item
+                            h3 Menu
+                        a.list-group-item(href='aboutus.html') Introducing
+                        a.list-group-item.active(href='aboutus2.html') Join us
+                        a.list-group-item(href='aboutus3.html') Invest us
+                .col-md-9
+                    .content
+                        h1
+                            span Why join us
+                        h3 Join The Digital PET to do the best work of your life.
+                        p
+                            | We are seeking individuals who share our vision, and believe they can help change the world. If that sounds like you, please send us your resume whether we have an open position posted that seems relevant to you or not.
+                        h3 Our people are our company.
+                        p
+                            | We're a team of technologists, scientists and inventors, led and backed by some of the greatest entrepreneurs, investors, creative minds, and global leaders on earth. We reward members of our team with highly competitive compensation, great benefits, catered meals and, most importantly, the opportunity to make a difference, and do incredible things.
+                        h1
+                            span Job opening
+                        .panel-group#accordion
+                            .panel.panel-default
+                                .panel-heading
+                                    h4.panel-title
+                                        a.accordion-toggle(data-toggle="collapse" data-parent="#accordion" href="#collapse1")
+                                        |Java Developers
+                                #collapse1.panel-collapse.collapse.in
+                                    .panel-body
+                            .panel.panel-default
+                                .panel-heading
+                                    h4.panel-title
+                                        a.accordion-toggle.collapsed(data-toggle="collapse" data-parent="#accordion" href="#collapse2")
+                                        |Embedded Linux
+                                #collapse2.panel-collapse.collapse
+                                    .panel-body
+                                        b RESPONSIBILITIES
+                                        ul
+                                            li Develop and enhance Linux device drivers.
+                                            li Design and develop real-time microcontroller firmware for precision instruments.
+                                            li Board bring-up, debug, and test hardware from prototype to manufacturing release.
+                                            li Implement algorithms such as PID control.
+                                            li Create software tools for test and automation, such as, deployment and remote upgrade.
+                                        b REQUIREMENTS
+                                        ul
+                                            li Bachelor's or Master's degree in Electrical Engineering, Computer Engineering, Computer Science, or a related field.
+                                            li Strong knowledge of C programming with some assembly language.
+                                            li System level programming on Linux, Windows, and other RTOS environments.
+                                            li Experience developing software on microcontrollers or single board computers.
+                                            li Knowledge of common hardware interfaces and device driver development.
+                                            li Ability to read schematics and use test equipment for troubleshooting.
+                                            li Understanding of control systems and algorithms such as PID.
+                                            li Performance tuning and memory optimization.
+                                            li Software best practices including the use of version control, unit tests, and code reviews.
+                                            li Proficient with specifying software requirements and writing design documentation.
+                            .panel.panel-default
+                                .panel-heading
+                                    h4.panel-title
+                                        a.accordion-toggle.collapsed(data-toggle="collapse" data-parent="#accordion" href="#collapse3")
+                                        |WPF Developers
+                                #collapse3.panel-collapse.collapse
+                                    .panel-body
+                                        b RESPONSIBILITIES
+                                        ul
+                                            li Research, analysis, design, implementation and ongoing enhancement of WPF/MVVM-based applications.
+                                            li Create and interconnect supporting WCF and REST services.
+                                            li Leverage persistence mechanisms including Entity Framework (v5) and ADO.NET.
+                                            li Deduce the causes of bugs and performance issues in applications.
+                                            li Produce excellent, thorough, design and development documentation with an evident sense of integrity and attention to detail.
+                                        b REQUIREMENTS
+                                        ul
+                                            li B.S. in Computer Science or a related field (Master's or PhD. degree in CS or related field a plus).
+                                            li 3+ years of coding WPF applications required (preferably using MVVM design pattern) on enterprise level applications.
+                                            li Strong knowledge XAML and C# required.
+                                            li Hands on experience creating custom controls, animations, and transitions in XAML.
+                                            li Must have completed a successfully deployed an enterprise level software application.
+                                            li Experience with rapid prototyping tools (e.g., Microsoft Blend) a plus.
+                                            li Understanding of best practices, including resource localization, data templating and styles, and code organization.
+                                            li Understanding of asynchronous and multi-threaded programming, and experience in leveraging them to create high-performance graphical applications.
+                                            li Experience working across all layers of development.
+                                            li Experience working in a rapid, agile, iterative application development.
+                                            li Excellent verbal and written communication skills.
+                                            li Excellent analytical and organizational skills in concert with superb decision making skills.
+                            .panel.panel-default
+                                .panel-heading
+                                    h4.panel-title
+                                        a.accordion-toggle.collapsed(data-toggle="collapse" data-parent="#accordion" href="#collapse4")
+                                        |Automation Technician
+                                #collapse4.panel-collapse.collapse
+                                    .panel-body
+                                        b RESPONSIBILITIES
+                                        ul
+                                            li Maintain complex automation lines used in production.
+                                            li Manage spares inventory and documentation.
+                                            li Maintaining bug lists, monitoring, and documenting performance progress.
+                                            li Assure all safety, manufacturing, and cleanliness requirements are met.
+                                        b REQUIREMENTS
+                                        ul
+                                            li 2 Year Technical/Associates Degree in Science, Math, Engineering, Manufacturing or a related discipline or equivalent military training / work experience preferred.
+                                            li Minimum of 5 years of experience supporting complex automated equipment.
+                                            li Must be able to provide electro-mechanical, fluidic circuit troubleshooting, repair, preventative maintenance, and equipment modification.
+                                            li Interpret signals from log files, system parameter set-up files to diagnose abnormal machine behavior.
+                                            li Possess strong communication skills.
+                                            li Experience with high volume production is a plus.
+                                            li Familiarity with PLCs, industrial robots.
+                                            li Experience in a GMP environment is preferred.
+                                            li Passion for control systems, robotics and/or electronics.
+                            .panel.panel-default
+                                .panel-heading
+                                    h4.panel-title
+                                        a.accordion-toggle.collapsed(data-toggle="collapse" data-parent="#accordion" href="#collapse5")
+                                        |Electrical Engineer
+                                #collapse5.panel-collapse.collapse
+                                    .panel-body
+                                        b RESPONSIBILITIES
+                                        ul
+                                            li Create specifications and design schemes, project functional blocks, select parts and vendors, test equipment for new projects and modify/enhance existing designs..
+                                            li Plan, organize, and conduct projects involving the evaluation, fabrication, modification, and design of electronic systems at board level.
+                                            li Prepare requirements documents, design verification and validation, and review technical design for hardware, software and PCBs.
+                                            li Contribute to product design and development.
+                                            li Transfer products to manufacturing with clear documentation and technical support to solve problems.
+                                            li Read schematics, build and debug prototype electrical/electronic circuits.
+                                            li Work on cross functional systems design and test with mechanical, software, and applications engineers.
+                                            li Stay up to date on industry trends and direction of design, verification, and application technology.
+                                        b REQUIREMENTS
+                                        ul
+                                            li Bachelor's or Master's degree in Electrical Engineering from a top tier university and superior academic credentials.
+                                            li 2+ years of experience in industrial environment.
+                                            li Experience with Microcontroller, FPGA, CPLD, and/or other programmable logic design.
+                                            li Knowledge of microprocessors.
+                                            li Experience with ASIC Design.
+                                            li Exposure to Verilog RTL design and/or circuit design.
+                                            li Control system programming, C/C++ is a plus.
+                                            li Mixed signal experience is a plus.
+                                            li Excellent verbal and written communication skills.
+                                            li Familiarity with relevant standards and regulatory requirements (FDA, GMP, ISO, AAMI, UL, CSA) is a plus.
+                                            li Passion for control systems, robotics and/or electronics.
+                            .panel.panel-default
+                                .panel-heading
+                                    h4.panel-title
+                                        a.accordion-toggle.collapsed(data-toggle="collapse" data-parent="#accordion" href="#collapse6")
+                                        |IP engineer
+                                #collapse6.panel-collapse.collapse
+                                    .panel-body

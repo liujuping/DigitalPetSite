@@ -1,0 +1,187 @@
+//
+   Created by LJP on 2015/6/29.
+
+extends  aboutusHeader
+
+block aboutuscontent
+   // Breadcrumbs - START
+   .breadcrumbs-container
+      .container
+         ol.breadcrumb
+            li
+               a(href='index.html') Home
+            li.active invest us
+   // Breadcrumbs - END
+   // Component: aboutus/aboutus.html - START
+   section
+      .container
+         .row
+            .col-md-3
+               .list-group.bright.background-clouds.color-text
+                  .list-group-item
+                     h3 Menu
+                  a.list-group-item(href='aboutus.html') Introducing
+                  a.list-group-item(href='aboutus2.html') Join us
+                  a.list-group-item.active(href='aboutus3.html') Invest us
+                  //a.list-group-item(href='aboutus.html') Porta ac consectetur ac
+                  //a.list-group-item(href='aboutus.html') Vestibulum at eros
+            .col-md-9
+                ul.timeline-2
+                    li.animated.fadeInRight.animation-delay-10
+                        time.timeline-time(datetime="") 1/4/2012
+                            span April
+                        i.timeline-2-point
+                        .panel.panel-default
+                            .panel-heading Plan to reinvent the Clinic All-digital PET
+                            .panel-body
+                                p Dr. Xie plan to reinvent the clinic all-digital PET by employing the novel digitization methods of MVT(R).
+                    li.animated.fadeInRight.animation-delay-10
+                        time.timeline-time(datetime="") 2/11/2013
+                            span November
+                        i.timeline-2-point
+                        .panel.panel-default
+                            .panel-heading The first two partners join this Team
+                            .panel-body
+                                p Dr. Xiao and Bo Zhang join this team to begin construct the company and technical team, and planning the next generation All-Digital PET/CT project.
+                    li.animated.fadeInRight.animation-delay-10
+                        time.timeline-time(datetime="") 1/4/2014
+                            span April
+                        i.timeline-2-point
+                        .panel.panel-default
+                            .panel-heading found the company The Digital PET Co., Ltd
+                    li.animated.fadeInRight.animation-delay-10
+                        time.timeline-time(datetime="") 10/6/2014
+                            span June
+                        i.timeline-2-point
+                        .panel.panel-default
+                            .panel-heading the core technical team was called
+                            .panel-body
+                                .row
+                                    .col-sm-4
+                                        img.img-responsive(src="assets/images/about_us.jpg" alt="")
+                                    .col-sm-8
+                                        p After 3 months for gathering the excellent engineers of Medical Imaging, Imaging Processing, Imaging reconstruction, Electronics, Embedded System, Algorithms, Software, Construction, IP, 11 experts join the Digital PET.
+                    li.animated.fadeInRight.animation-delay-10
+                        time.timeline-time(datetime="") 15/6/2014
+                            span June
+                        i.timeline-2-point
+                        .panel.panel-default
+                            .panel-heading began to design the first All-Digtal PET/CT
+                            .panel-body
+                                p The new PET/CT project started!
+
+                    li.animated.fadeInRight.animation-delay-10
+                        time.timeline-time(datetime="") 15/3/2015
+                            span March
+                        i.timeline-2-point
+                        .panel.panel-default
+                            .panel-heading finish the PET part of the first All-digital PET/CT
+                            .panel-body
+                                p the first All-digital PET was finished just in 9 months for totally design and manufacture. The GE, Simens and Philips will take more than 6 years to produce a PET in the past.
+                                p We obtained more than 13 patents in the system integration and calibration.
+                    li.animated.fadeInRight.animation-delay-10
+                        time.timeline-time(datetime="") 10/9/2015
+                            span September
+                        i.timeline-2-point
+                        .panel.panel-default
+                            .panel-heading we want to make the clinic experiments
+                    li.animated.fadeInRight.animation-delay-10
+                        time.timeline-time(datetime="") 1/6/2016
+                            span June
+                        i.timeline-2-point
+                        .panel.panel-default
+                            .panel-heading we will get the CFDA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Component: aboutus/aboutus.html - END
+   // Component: commons/this-is-us.html - START
+   //section
+      .container
+         .reduce-top-margin
+            h1
+               span This is us
+            .row
+               .col-xs-6.col-sm-4.col-md-2
+                  a.thumbnail.gallery-thumbnail(href='http://www.digital-pet.com')
+                     img.img-circle(src='assets/images/zb.jpg', alt='zhangbo')
+                  br
+                  p.text-center
+                     small
+                        | CTO
+                        br
+                        | Leader of Tech-Team
+                        br
+                        | Expert of industrial products and medical imaging system integration. Leading the tech-team implement this novel high performance and flexible PET/CT system.
+               .col-xs-6.col-sm-4.col-md-2
+                  a.thumbnail.gallery-thumbnail(href='http://www.digital-pet.com')
+                     img.img-circle(src='assets/images/ylf.jpg', alt='...')
+                  br
+                  p.text-center
+                     small
+                        | Manager
+                        br
+                        | Dept of Embedded System
+                        br
+                        | Creatively bring the All-IP tech into All-Digital PET/CT system.
+                        | Expert in ARM and Linux design and develop for high performance & high robust equipment.
+               .col-xs-6.col-sm-4.col-md-2
+                  a.thumbnail.gallery-thumbnail(href='http://www.digital-pet.com')
+                     img.img-circle(src='assets/images/yl.jpg', alt='...')
+                  br
+                  p.text-center
+                     small
+                        | Manager
+                        br
+                        | Dept of Logic
+                        br
+                        | Help Medical Imaging Equipments achieve 100Gbps data rate. Expert in FPGA design and develop. Complex algorithm design and robust interface design in FPGA.
+               .col-xs-6.col-sm-4.col-md-2
+                  a.thumbnail.gallery-thumbnail(href='http://www.digital-pet.com')
+                     img.img-circle(src='assets/images/fl.jpg', alt='...')
+                  br
+                  p.text-center
+                     small
+                        | Manager
+                        br
+                        | Dept of Hardware
+                        br
+                        | Excellent hardware design for MIE. Rich experience for circuit measurment and debug. Invent the distributed-global-clock-matrix.
+               .col-xs-6.col-sm-4.col-md-2
+                  a.thumbnail.gallery-thumbnail(href='http://www.digital-pet.com')
+                     img.img-circle(src='assets/images/xc.jpg', alt='...')
+                  br
+                  p.text-center
+                     small
+                        | Manager
+                        br
+                        | Dept of System Sofware
+                        br
+                        | Design the whole system software for PET/CT, excellent UI and robust core. CS model make the image soft system stable and fast.
+               .col-xs-6.col-sm-4.col-md-2
+                  a.thumbnail.gallery-thumbnail(href='http://www.digital-pet.com')
+                     img.img-circle(src='assets/images/zjb.jpg', alt='...')
+                  br
+                  p.text-center
+                     small
+                        | Manager
+                        br
+                        | Dept of Structure
+                        br
+                        | More than 10 years experience in structure design and analysis. Gantry design, calibration design, movement structure design. Make the steel safe and smart.

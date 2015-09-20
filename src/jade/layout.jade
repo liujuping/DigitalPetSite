@@ -1,0 +1,51 @@
+doctype html
+html
+  head
+    include head
+  body.background-clouds
+    #nav-wrapper.background-white.color-black
+      nav#mainMenu.navbar.navbar-fixed-top(role='navigation')
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+              span.sr-only Toggle navigation
+              |             
+              span.icon-bar.background-lead
+              |             
+              span.icon-bar.background-lead
+              |             
+              span.icon-bar.background-lead
+            |           
+            a.navbar-brand(href='index.html')
+              img(src='assets/images/logo.png', alt='logo')
+          .collapse.navbar-collapse.navbar-ex1-collapse
+            ul.nav.navbar-nav.navbar-right
+              block header_list
+                li.dropdown.active
+                  a(href='index.html') Home
+                li.dropdown
+                  a(href='aboutus.html') About us
+                li.dropdown
+                  a.dropdown-toggle(data-toggle="dropdown")
+                    |Product
+                    span.caret
+                  ul.dropdown-menu
+                    li.active
+                      a(href="products.html") overview
+                    li
+                      a(href="specification.html") specification
+                    li
+                      a(href="imaging.html") imaging
+                li.dropdown
+                   a(href='resource.html') Resource
+                li.dropdown
+                  a(href='contact.html') Contact
+
+      block indexcontent
+    block aboutuscontent
+      block contactcontent
+      block productcontent
+      block resourcecontent
+    include footer
+
+    include scripts

@@ -1,0 +1,186 @@
+//
+   Created by LJP on 2015/6/29.
+extends layout
+block header_list
+    li
+        a(href='index.html') Home
+    li
+        a(href='aboutus.html') About us
+    li.dropdown.active
+        a.dropdown-toggle(data-toggle="dropdown")
+            |Product
+            span.caret
+        ul.dropdown-menu
+            li.active
+                a(href="products.html") overview
+            li
+                a(href="specification.html") specification
+            li
+                a(href="imaging.html") imaging
+
+    li
+        a(href='resource.html') Resource
+    li
+        a(href='contact.html') Contact
+block productcontent
+    .breadcrumbs-container
+        .container
+            ol.breadcrumb
+                li
+                    a(href='index.html') Home
+                li products
+                li.active overview
+    //.collapse.navbar-collapse.navbar-ex1-collapse
+    //section
+        .list-group.bright.background-clouds.color-text.nav-tabs
+            a.list-group-item.active(href="products.html" style="float:left") overview
+            a.list-group-item(href="specification.html" style="float:left") specification
+            a.list-group-item(href="imaging.html" style="float:left") imaging
+    //div(style="font-size:12px")
+        ul.nav.nav-tabs.navbar-right
+            li.active
+                a(href="products.html") overview
+            li
+                a(href="specification.html") specification
+            li
+                a(href="imaging.html") imaging
+    section(style="padding=0")
+        .container
+            .row
+                .col-xs-12
+                    .list-group.bright.background-clouds.color-text.special_a
+                        a.list-group-item.active(href='products.html' style="float:left") overview
+                        a.list-group-item(href='specification.html' style="float:left") specification
+                        a.list-group-item(href='imaging.html' style="float:left") imaging
+        img.img-responsive(src="assets/images/1.jpg")
+        img.img-responsive(src="assets/images/2.jpg")
+        img.img-responsive(src="assets/images/3.jpg")
+        img.img-responsive(src="assets/images/4.jpg")
+        img.img-responsive(src="assets/images/5.jpg")
+        img.img-responsive(src="assets/images/6.jpg")
+        img.img-responsive(src="assets/images/7.jpg")
+        img.img-responsive(src="assets/images/8.jpg")
+        //.container
+            .row
+                .col-md-12
+                    //h1
+                        span overview
+        //section.overview
+            img(src="assets/images/pet01.jpg" alt="Slide Image")
+            .tp-caption.large_bold_white.lft.ltt(style="font-size: 40px; line-height: 40px;left:70px;top:90px")
+                |The First All-Digital
+                br
+                | PET/CT
+        //.container
+            .container.section_text
+                .icons.pt80.pb90
+                    ul
+                        li.col-md-3
+                            .icon_pic
+                                | Smart
+                                br
+                                | Gantry
+                        li.col-md-3
+                            .icon_pic_one
+                                |400G
+                        li.col-md-3
+                            .icon_pic_one
+                                | G-CLOCK
+                        li.col-md-3
+                            .icon_pic
+                                | Open
+                                br
+                                | Architecture
+                        li.col-md-3
+                            .icon_pic
+                                |Auto
+                                br
+                                | Calibration
+                        li.col-md-3
+                            .icon_pic_one
+                                |All-in-IP
+                        li.col-md-3
+                            .icon_pic
+                                |Module
+                                br
+                                |Based
+                        li.col-md-3
+                            .icon_pic
+                                |Smart
+                                br
+                                |Power
+                        li.col-md-3
+                            .icon_pic
+                                |Distribute
+                                br
+                                |Compute
+                        li.col-md-3
+                            .icon_pic_one
+                                |Adapt  Recon
+                        li.col-md-3
+                            .icon_pic_one
+                                |HD Image
+        //section.overview
+            img(src="assets/images/pet04.JPG" alt="Slide Image")
+            .tp-caption.large_bold_white.lft.ltt(style="font-size: 40px; line-height: 40px; top:80px;left:70px;")
+                |Plug and Play
+                br
+                |Detectors
+            .tp-caption.small_light_white.sfl.stl(style="top:230px;left:70px;")
+                | Real Fast Scintillator
+            .tp-caption.small_light_white.sfl.stl(style="top:280px;left:70px;")
+                | Real Digitize by MVTR
+            .tp-caption.small_light_white.sfl.stl(style="top:330px;left:70px;")
+                | Update  online
+            .tp-caption.small_light_white.sfl.stl(style="top:380px;left:70px;")
+                | Data/Control separate
+        //section.overview
+            img(src="assets/images/pet03.jpg" alt="Slide Image")
+            .tp-caption.large_bold_white.lft.ltt(style="font-size: 40px; line-height: 50px;right:70px;bottom:80px")
+                | Extremely high performance
+                br
+                | Global Clock Matrix
+            .tp-caption.small_light_white.sfl.stl(style="left:70px;top:10%")
+                | 25ps Jitter
+            .tp-caption.small_light_white.sfl.stl(style="left:70px;top:20%")
+                | Plug and Play
+            .tp-caption.small_light_white.sfl.stl(style="left:70px;top:30%")
+                | >10000 outputs
+            .tp-caption.small_light_white.sfl.stl(style="left:70px;top:40%")
+                | TCP/IP For Managenet
+            .tp-caption.small_light_white.sfl.stl(style="left:70px;top:50%")
+                | Update Online
+        //section.overview
+            img(src="assets/images/pet06.jpg" alt="Slide Image")
+            .tp-caption.large_bold_white.lft.ltt(style="font-size: 40px; line-height: 40px;left:70px;bottom:170px")
+                |The World’s First Flexialbe
+                br
+                |Smart Gantry
+            .tp-caption.small_light_white.sfl.stl(style="width:450px;right:70px;top:10%")
+                | Real convenient : Easy Install and Move
+            .tp-caption.small_light_white.sfl.stl(style="width:450px;right:70px;top:20%")
+                | Real Flexible Scalable
+            .tp-caption.small_light_white.sfl.stl(style="width:450px;top:30%;right:70px")
+                | All CNC Manufacture
+            .tp-caption.small_light_white.sfl.stl(style="width:450px;top:40%;right:70px")
+                | All AAO & Stainless Material (used for iphone)
+            .tp-caption.small_light_white.sfl.stl(style="width:450px;top:50%;right:70px")
+                | Real Smart: Position Identify for PnP Detectors
+            .tp-caption.small_light_white.sfl.stl(style="width:450px;top:60%;right:70px")
+                | Real Time Monitor and Controller for Power
+        //section.overview
+            img(src="assets/images/pet05.JPG" alt="Slide Image")
+            .tp-caption.large_bold_white.lft.ltt(style="font-size: 40px; line-height: 40px;right:70px;top:620px")
+                |Data Acquiring System
+                br
+                |will never be a limit for Count Rate
+            .tp-caption.small_light_white.sfl.stl(style="top:400px;right:70px;")
+                | No  limited interfaces
+            .tp-caption.small_light_white.sfl.stl(style="top:450px;right:70px;")
+                | Standard Switch
+            .tp-caption.small_light_white.sfl.stl(style="top:500px;right:70px;")
+                | 400Gbps Data Rate
+            .tp-caption.small_light_white.sfl.stl(style="top:550px;right:70px;")
+                | Easy extended
+
+
